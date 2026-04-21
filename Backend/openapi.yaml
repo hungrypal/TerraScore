@@ -1,0 +1,42 @@
+openapi: 3.0.3
+info:
+  title: TerraScore API
+  version: 0.1.0
+servers:
+  - url: /api/v1
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+  /projects:
+    get:
+      summary: List projects
+      responses:
+        '200':
+          description: Project list
+    post:
+      summary: Create project
+      responses:
+        '201':
+          description: Project created
+  /datasets:
+    get:
+      summary: List datasets
+      responses:
+        '200':
+          description: Dataset list
+  /datasets/verify:
+    post:
+      summary: Set dataset verification state
+      responses:
+        '200':
+          description: Updated
+  /scores/compute:
+    post:
+      summary: Compute project score
+      responses:
+        '200':
+          description: Score computed
