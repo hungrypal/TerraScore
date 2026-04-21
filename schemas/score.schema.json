@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://terrascore.dev/schemas/score.schema.json",
+  "title": "Score",
+  "type": "object",
+  "required": ["score_id", "project_id", "score_value", "score_band"],
+  "properties": {
+    "score_id": { "type": "string" },
+    "project_id": { "type": "string" },
+    "score_value": { "type": "number" },
+    "score_band": { "type": "string", "enum": ["low", "medium", "high"] },
+    "computed_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

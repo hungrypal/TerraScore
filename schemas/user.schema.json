@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://terrascore.dev/schemas/user.schema.json",
+  "title": "User",
+  "type": "object",
+  "required": ["user_id", "full_name", "email", "role"],
+  "properties": {
+    "user_id": { "type": "string" },
+    "full_name": { "type": "string" },
+    "email": { "type": "string", "format": "email" },
+    "role": { "type": "string", "enum": ["admin", "analyst", "student"] },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

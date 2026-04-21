@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://terrascore.dev/schemas/project.schema.json",
+  "title": "Project",
+  "type": "object",
+  "required": ["project_id", "project_name", "region"],
+  "properties": {
+    "project_id": { "type": "string" },
+    "project_name": { "type": "string" },
+    "region": { "type": "string" },
+    "user_id": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

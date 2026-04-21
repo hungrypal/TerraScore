@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://terrascore.dev/schemas/dataset.schema.json",
+  "title": "Dataset",
+  "type": "object",
+  "required": ["dataset_id", "source_name", "provider", "status"],
+  "properties": {
+    "dataset_id": { "type": "string" },
+    "source_name": { "type": "string" },
+    "provider": { "type": "string" },
+    "access_level": { "type": "string" },
+    "status": { "type": "string", "enum": ["blocked", "verified", "active"] }
+  },
+  "additionalProperties": false
+}

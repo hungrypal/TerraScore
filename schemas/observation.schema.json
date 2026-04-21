@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://terrascore.dev/schemas/observation.schema.json",
+  "title": "Observation",
+  "type": "object",
+  "required": ["observation_id", "project_id", "dataset_id", "value", "observed_at"],
+  "properties": {
+    "observation_id": { "type": "string" },
+    "project_id": { "type": "string" },
+    "dataset_id": { "type": "string" },
+    "geojson": { "type": "string" },
+    "value": { "type": "number" },
+    "observed_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}
