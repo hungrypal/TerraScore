@@ -1,4 +1,5 @@
 # TerraScore
+AI-Powered Agricultural Credit Scoring Platform
 
 TerraScore is a geospatial scoring platform that combines Earth observation data with project-defined scoring logic.
 
