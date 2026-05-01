@@ -1,0 +1,19 @@
+# Environment variables
+.env
+
+# Virtual environments
+gee_env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model files
+models/*.joblib
+
+# OS files
+.DS_Store
+
+# Logs / temp
+*.log
